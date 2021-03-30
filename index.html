@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Character encoding and viewport definitions -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta -->
+    <title>Juliette Pagacz</title>
+    <meta name="description" content="=." />
+
+
+    <!-- BOOTSTRAP-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+
+    <!-- Stylesheets  -->
+    <link rel="stylesheet" href="CSS/type.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="CSS/layout.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h1><a href="index.html" class="link">Juliette Pagacz</a></h1>
+            <div class="dropdown-content"><img src="" width="150px"></div>
+        </nav>
+    </header>
+
+    <main class="wrap">
+        <div class="cursor cursor--small"></div>
+        <canvas class="cursor cursor--canvas" resize></canvas>
+
+        <!-- IMAGE OPPCOLOR 
+        <div class="item oppcolor"><img src="images/logo_juliette_blue.gif" height="100px" id="movable1"></div>
+
+         IMAGE HAND
+        <div class="item hand"><img src="images/me.gif" height="100px" id="movable2"></div>
+         -->
+
+        <!-- UX -->
+        <section class="ux">
+            <div class="item">
+                <div>
+                    <nav class="nav"><h2 class="link"><strong>ux designer</strong></h2></nav>
+                </div>
+                <!--<div class="portfolio-info">
+                    <div class="sub-wrap">
+                        <div class="sub-item">
+                            <p style="color: orangered;">ux designer</p>
+                            <ul>
+                                <li><a href="https://github.com/panpanthera">it's all on github</a></li>
+                                <li>this website</li>
+                                <li>tetris</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <!-- DEVELOPER -->
+        <section class="dev portfolio">
+            <div class="portfolio-wrap item">
+                <div>
+                    <h2><strong>creative developer</strong></h2>
+                </div>
+                <div class="portfolio-info">
+                    <div class="sub-wrap">
+                        <div class="sub-item">
+                            <p style="color: orangered;">creative developer</p>
+                            <div class="submain">
+                                <ul>
+                                    <li><a href="https://github.com/panpanthera">github</a></li>
+                                    <li>this website</li>
+                                    <li>tetris</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL -->
+        <section class="visu portfolio">
+            <div class="portfolio-wrap item">
+                <div>
+                    <h2><strong>visual storyteller</strong></h2>
+                </div>
+                <div class="portfolio-info">
+                    <div class="sub-wrap">
+                        <div class="sub-item">
+                            <p style="color: orangered;">visual storyteller</p>
+                            <div class="submain">
+                                <ul>
+                                    <li>occupy wall street, 2011</li>
+                                    <li class="dropdown"><a href="lebloui.html">l'ébloui, 2013</a> <img
+                                            class="dropdown-content" src="images/chouette.jpg" width="200px"></li>
+                                    <li class="dropdown"><a href="lesoleil.html">le soleil n'a pas d'ombre, 2014</a>
+                                    </li>
+                                    <li class="dropdown">voyage en béotie, 2015</li>
+                                    <li class="dropdown">stille nacht, 2015</li>
+                                    <li class="dropdown"><a href="armashowreel.html">ARMA media showreel, 2017 </a><img
+                                            class="dropdown-content"
+                                            src="https://i.vimeocdn.com/video/614588696.webp?mw=900&mh=506"
+                                            width="200px">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BIO -->
+        <section class="bio portfolio">
+            <div class="portfolio-wrap item">
+                <div><strong>bio</strong></div>
+                <div class="portfolio-info">
+                    <div class="sub-wrap">
+                        <!--<h3 class="sub-item" style="text-decoration: overline">bio</h3>-->
+                        <div class="submain-bio">
+                            <p>
+                                <br>2019/2021
+                                <br>Computer programming, 42 School, Brussels
+                                <br>
+                                <br>2016/2017
+                                <br>Creative intern,<a href="https://www.arma.tv/">ARMA Media, Shanghai</a>
+                                <br>04 - 06/2016
+                                <br><em>D'Après Nature</em>collective exhibition, Verviers Museum of Fine Arts
+                                <br>
+                                <br>06 - 09/2015
+                                <em>Voyage en Béotie</em>solo exhibition at Wattitude, Liege
+                                <br>
+                                <br>12/2014
+                                <br><em>Stille Nacht</em>exhibition featuring Fred Winand, Liege
+                                <br>
+                                <br>03/2014
+                                <br><em>L’Ebloui</em>selected work which was exhibited during the International Biennale
+                                of Photography, Liege
+                                <br>
+                                <br>06/2014
+                                <br>Bachelor in Fine Arts, Ecole Supérieur des Arts Saint-Luc, Liège</p>
+                        </div>
+                        <div class="subtext-dev">
+                            <p>I speak native French, bilingual English, good Spanish and some Chinese. I love to dwelve
+                                in technologies and explore visual as storytelling possibilities.
+                                <br>Working in an ambitious and competitive environment, with clear goals in mind is
+                                what I enjoy most.</p>
+                        </div>
+                        <div class="sub-item subtext-location">
+                            <p>Based in <b>Brussels</b>for now</p>
+                        </div>
+                        <div class="sub-item subplanet">
+                            <canvas id='globe' width='150' height='150' style="cursor: move"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG -->
+        <section class="blog portfolio">
+            <div class="portfolio-wrap item">
+                <div><strong>blog</strong></div>
+                <div class="portfolio-info">
+                    <iframe src="http://juliettepagacz.tumblr.com/" width="90%" height="1000" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <nav class="nav"><a href="#" class="link" style="color: red;">write me</a></nav>
+    </footer>
+    <!-- Optional JavaScript -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <!-- <script>
+        //Make the DIV element draggagle:
+        dragElement(document.getElementById("movable1"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(elmnt)) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(elmnt).onmousedown = dragMouseDown;
+            } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                /* stop moving when mouse button is released:*/
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+    <script>
+        //Make the DIV element draggagle:
+        dragElement(document.getElementById("movable2"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(elmnt)) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(elmnt).onmousedown = dragMouseDown;
+            } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                /* stop moving when mouse button is released:*/
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>-->
+
+    <!-- PLANET -->
+    <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript'
+        src='https://cdn.rawgit.com/BinaryMuse/planetary.js/v1.1.2/dist/planetaryjs.min.js'></script>
+    <script type="text/javascript">
+        var planet = planetaryjs.planet();
+
+
+        // You can remove this statement if `world-110m.json`
+        // is in the same path as the HTML page:
+        planet.loadPlugin(planetaryjs.plugins.earth({
+            topojson: {
+                file: 'https://raw.githubusercontent.com/BinaryMuse/planetary.js/v1.1.2/dist/world-110m.json'
+            },
+            /* Let's add some color to the globe */
+            oceans: {
+                fill: '#3d54fe'
+            },
+            land: {
+                fill: '#F5F4F0'
+            },
+            borders: {
+                stroke: '#7c7c79'
+            }
+        }));
+        // The `pings` plugin draws animated pings on the globe.
+        planet.loadPlugin(planetaryjs.plugins.pings());
+        // The `zoom` and `drag` plugins enable
+        // manipulating the globe with the mouse.
+        planet.loadPlugin(planetaryjs.plugins.zoom({
+            scaleExtent: [70, 70]
+        }));
+
+        // !! ajouté d'un autre planetary par mes soins. !!
+        planet.loadPlugin(planetaryjs.plugins.drag({
+            // Dragging the globe should pause the
+            // automatic rotation until we release the mouse.
+            onDragStart: function () {
+                this.plugins.autorotate.pause();
+            },
+            onDragEnd: function () {
+                this.plugins.autorotate.resume();
+            }
+        }));
+
+        // Load our custom autorotate plugin
+        planet.loadPlugin(autorotate(10));
+
+        // Load the `pings` plugin to draw animated pings on the globe
+        planet.loadPlugin(planetaryjs.plugins.pings({
+            color: '#670afd',
+            ttl: 1000,
+            angle: 10
+        }));
+
+        // Make the planet fit well in its canvas
+        planet.projection.scale(70).translate([70, 70]);
+        var canvas = document.getElementById('globe');
+        planet.draw(canvas);
+
+        // Helper function to add one ping on the globe
+        function showLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            // Add a ping on the globe every second
+            setInterval(function () {
+                planet.plugins.pings.add(longitude, latitude);
+            }, 1000);
+        }
+
+        // Geolocation API error callback
+        function geoError(posError) {
+            locationButton.classList.add('error');
+            locationButton.innerText = posError.message;
+        }
+
+        // This plugin will automatically rotate the globe around its vertical
+        // axis a configured number of degrees every second.
+        function autorotate(degPerSec) {
+            // Planetary.js plugins are functions that take a `planet` instance
+            // as an argument...
+            return function (planet) {
+                var lastTick = null;
+                var paused = false;
+                planet.plugins.autorotate = {
+                    pause: function () {
+                        paused = true;
+                    },
+                    resume: function () {
+                        paused = false;
+                    }
+                };
+                // ...and configure hooks into certain pieces of its lifecycle.
+                planet.onDraw(function () {
+                    if (paused || !lastTick) {
+                        lastTick = new Date();
+                    } else {
+                        var now = new Date();
+                        var delta = now - lastTick;
+                        // This plugin uses the built-in projection (provided by D3)
+                        // to rotate the globe each time we draw it.
+                        var rotation = planet.projection.rotate();
+                        rotation[0] += degPerSec * delta / 1000;
+                        if (rotation[0] >= 180) rotation[0] -= 360;
+                        planet.projection.rotate(rotation);
+                        lastTick = now;
+                    }
+                });
+            };
+        };
+
+        function draw() {
+
+        }
+    </script>
+
+
+    <!-- CURSOR -->
+    <script>
+        // set the starting position of the cursor outside of the screen
+        let clientX = 100;
+        let clientY = 100;
+        const innerCursor = document.querySelector(".cursor--small");
+
+        const initCursor = () => {
+            // add listener to track the current mouse position
+            document.addEventListener("mousemove", e => {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            });
+
+            // transform the innerCursor to the current mouse position
+            // use requestAnimationFrame() for smooth performance
+            const render = () => {
+                innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+                // if you are already using TweenMax in your project, you might as well
+                // use TweenMax.set() instead
+                // TweenMax.set(innerCursor, {
+                //   x: clientX,
+                //   y: clientY
+                // });
+
+                requestAnimationFrame(render);
+            };
+            requestAnimationFrame(render);
+        };
+
+        initCursor();
+
+        let lastX = 0;
+        let lastY = 0;
+        let isStuck = false;
+        let showCursor = false;
+        let group, stuckX, stuckY, fillOuterCursor;
+
+        const initCanvas = () => {
+            const canvas = document.querySelector(".cursor--canvas");
+            const shapeBounds = {
+                width: 75,
+                height: 75
+            };
+            paper.setup(canvas);
+            const strokeColor = "#3d54fe";
+            const strokeWidth = 1;
+            const segments = 8;
+            const radius = 15;
+
+            // we'll need these later for the noisy circle
+            const noiseScale = 150; // speed
+            const noiseRange = 4; // range of distortion
+            let isNoisy = false; // state
+
+            // the base shape for the noisy circle
+            const polygon = new paper.Path.RegularPolygon(
+                new paper.Point(0, 0),
+                segments,
+                radius
+            );
+            polygon.strokeColor = strokeColor;
+            polygon.strokeWidth = strokeWidth;
+            polygon.smooth();
+            group = new paper.Group([polygon]);
+            group.applyMatrix = false;
+
+            const noiseObjects = polygon.segments.map(() => new SimplexNoise());
+            let bigCoordinates = [];
+
+            // function for linear interpolation of values
+            const lerp = (a, b, n) => {
+                return (1 - n) * a + n * b;
+            };
+
+            // function to map a value from one range to another range
+            const map = (value, in_min, in_max, out_min, out_max) => {
+                return (
+                    ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+                );
+            };
+
+            // the draw loop of Paper.js
+            // (60fps with requestAnimationFrame under the hood)
+            paper.view.onFrame = event => {
+                // using linear interpolation, the circle will move 0.2 (20%)
+                // of the distance between its current position and the mouse
+                // coordinates per Frame
+                if (!isStuck) {
+                    // move circle around normally
+                    lastX = lerp(lastX, clientX, 0.2);
+                    lastY = lerp(lastY, clientY, 0.2);
+                    group.position = new paper.Point(lastX, lastY);
+                } else if (isStuck) {
+                    // fixed position on a nav item
+                    lastX = lerp(lastX, stuckX, 0.2);
+                    lastY = lerp(lastY, stuckY, 0.2);
+                    group.position = new paper.Point(lastX, lastY);
+                }
+
+                if (isStuck && polygon.bounds.width < shapeBounds.width) {
+                    // scale up the shape 
+                    polygon.scale(1.08);
+                } else if (!isStuck && polygon.bounds.width > 30) {
+                    // remove noise
+                    if (isNoisy) {
+                        polygon.segments.forEach((segment, i) => {
+                            segment.point.set(bigCoordinates[i][0], bigCoordinates[i][1]);
+                        });
+                        isNoisy = false;
+                        bigCoordinates = [];
+                    }
+                    // scale down the shape
+                    const scaleDown = 0.92;
+                    polygon.scale(scaleDown);
+                }
+
+                // while stuck and big, apply simplex noise
+                if (isStuck && polygon.bounds.width >= shapeBounds.width) {
+                    isNoisy = true;
+                    // first get coordinates of large circle
+                    if (bigCoordinates.length === 0) {
+                        polygon.segments.forEach((segment, i) => {
+                            bigCoordinates[i] = [segment.point.x, segment.point.y];
+                        });
+                    }
+
+                    // loop over all points of the polygon
+                    polygon.segments.forEach((segment, i) => {
+
+                        // get new noise value
+                        // we divide event.count by noiseScale to get a very smooth value
+                        const noiseX = noiseObjects[i].noise2D(event.count / noiseScale, 0);
+                        const noiseY = noiseObjects[i].noise2D(event.count / noiseScale, 1);
+
+                        // map the noise value to our defined range
+                        const distortionX = map(noiseX, -1, 1, -noiseRange, noiseRange);
+                        const distortionY = map(noiseY, -1, 1, -noiseRange, noiseRange);
+
+                        // apply distortion to coordinates
+                        const newX = bigCoordinates[i][0] + distortionX;
+                        const newY = bigCoordinates[i][1] + distortionY;
+
+                        // set new (noisy) coodrindate of point
+                        segment.point.set(newX, newY);
+                    });
+
+                }
+                polygon.smooth();
+            };
+
+        }
+
+        initCanvas();
+
+        const initHovers = () => {
+
+            // find the center of the link element and set stuckX and stuckY
+            // these are needed to set the position of the noisy circle
+            const handleMouseEnter = e => {
+                const navItem = e.currentTarget;
+                const navItemBox = navItem.getBoundingClientRect();
+                stuckX = Math.round(navItemBox.left + navItemBox.width / 2);
+                stuckY = Math.round(navItemBox.top + navItemBox.height / 2);
+                isStuck = true;
+            };
+
+            // reset isStuck on mouseLeave
+            const handleMouseLeave = () => {
+                isStuck = false;
+            };
+
+            // add event listeners to all items
+            const linkItems = document.querySelectorAll(".link");
+            linkItems.forEach(item => {
+                item.addEventListener("mouseenter", handleMouseEnter);
+                item.addEventListener("mouseleave", handleMouseLeave);
+            });
+        };
+
+
+
+        initHovers();
+
+    </script>
+</body>
+
+</html>

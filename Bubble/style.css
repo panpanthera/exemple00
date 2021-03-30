@@ -1,0 +1,8 @@
+canvas {
+  min-width: 800px;
+  min-height: 800px;
+}
+
+#myCanvas {
+  display: none;
+}

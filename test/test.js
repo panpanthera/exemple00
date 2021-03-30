@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Character encoding and viewport definitions -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta -->
+    <title>Juliette Pagacz</title>
+    <meta name="description" content="=." />
+
+
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Stylesheets  -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<style>
+.line-drawing-wrapper {
+	animation: spin 60s linear infinite;
+	height: 400px;
+	position: relative;
+	transform-origin: 54.5% 50%;
+	width: 500px;
+}
+
+svg {
+	height: 100%;
+	position: absolute;
+	transition: all 0.5s ease-out;
+	width: 100%;
+
+	circle {
+		fill: none;
+		stroke: #000;
+		stroke-width: 3px;
+	}
+
+	text {
+		animation-duration: 60s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		font-family: arial, helvetica, sans-serif;
+		font-size: 20px;
+		font-style: italic;
+		font-weight: 300;
+		fill: #000;
+		text-transform: uppercase;
+	}
+
+	&:nth-child(1) {
+		&:not(.active) {
+			transform: translate(-5%, -5%);
+		}
+
+		& > text {
+			animation-name: spinTextOne;
+			transform-origin: 18.5% 18.5%;
+		}
+	}
+
+	&:nth-child(2) {
+		&:not(.active) {
+			transform: translate(5%, -5%);
+		}
+
+		& > text {
+			animation-name: spinTextTwo;
+			transform-origin: 88.5% 18.5%;
+		}
+	}
+
+	&:nth-child(3) {
+		&:not(.active) {
+			transform: translate(-5%, 5%);
+		}
+
+		& > text {
+			animation-name: spinTextThree;
+			transform-origin: 14.5% 78%;
+		}
+	}
+
+	&:nth-child(4) {
+		&:not(.active) {
+			transform: translate(5%, 5%);
+		}
+
+		& > text {
+			animation-name: spinTextFour;
+			transform-origin: 90% 78%;
+		}
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spinTextOne {
+	0% {
+		transform: rotate(0deg);
+	}
+	12.5% {
+		transform: rotate(-45deg) translate(0, 6%);
+	}
+	62.5% {
+		transform: rotate(-225deg) translate(0, -6%);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spinTextTwo {
+	0% {
+		transform: rotate(0deg);
+	}
+	37.5% {
+		transform: rotate(-135deg) translate(0, -6%);
+	}
+	87.5% {
+		transform: rotate(-315deg) translate(0, 6%);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spinTextThree {
+	0% {
+		transform: rotate(0deg);
+	}
+	37.5% {
+		transform: rotate(-135deg) translate(0, 8%);
+	}
+	87.5% {
+		transform: rotate(-315deg) translate(0, -8%);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spinTextFour {
+	0% {
+		transform: rotate(0deg);
+	}
+	12.5% {
+		transform: rotate(-45deg) translate(0, -4%);
+	}
+	37.5% {
+		transform: rotate(-135deg) translate(-2%, 0%);
+	}
+	62.5% {
+		transform: rotate(-225deg) translate(0, 4%);
+	}
+	87.5% {
+		transform: rotate(-315deg) translate(0, 1.333%);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+section {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 3rem 0;
+}
+
+span {
+	position: absolute;
+	border: 1px solid red;
+	width: 82px;
+	height: 14px;
+	left: 2px;
+	top: 65px;
+	transform-origin: 50% 50%;
+	transform: rotate(90deg);
+}
+
+button {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+</style>
+
+<section>
+	<div class="line-drawing-wrapper">
+		<svg viewBox="0 0 500 400">
+			<circle cx="273" cy="200" r="175" />
+			<text x="50" y="80">Offline</text>
+		</svg>
+
+		<svg viewBox="0 0 500 400">
+			<circle cx="273" cy="200" r="175" />
+			<text x="412" y="80">Media</text>
+		</svg>
+
+		<svg viewBox="0 0 500 400">
+			<circle cx="273" cy="200" r="175" />
+			<text x="22" y="320">Creative</text>
+		</svg>
+
+		<svg viewBox="0 0 500 400">
+			<circle cx="273" cy="200" r="175" />
+			<text x="412" y="320">Online</text>
+		</svg>
+	</div>
+</section>
+<script>
+    setTimeout(() => {
+	Array.from(document.querySelectorAll('svg')).forEach((svg) => svg.classList.toggle("active"));
+}, 2000);</script>
+</html>

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+::-moz-selection {
+    background: #ffffcc;
+}
+
+::selection {
+    background: #3d54fe;
+    color: #F5F4F0;
+}
+
+html {
+    font-size: 19px;
+    /* base unit for rems */
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+/* Headlines */
+h1 {
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1rem;
+    /* font-weight: normal; text-transform: uppercase; letter-spacing: 0.07em; color: rgba(0,0,0,0.5); */
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+h2 + h3 {
+    margin-top: 0;
+}
+
+h3 + p {
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+h4:before {
+    content: '§ ';
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    transition: #3d54fe 0.5s ease-out;
+}
+
+a:hover {
+    color: #3d54fe;
+    text-decoration: none;
+}
