@@ -304,7 +304,7 @@ footer {
 .submain {
     text-align: left;
     align-items: left;
-    grid-column: 4 / 8;
+    grid-column: 2 / 8;
     grid-row: 2 / span 8;
     color: #000;
 }
