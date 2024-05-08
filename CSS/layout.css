@@ -184,6 +184,19 @@ footer {
     color: #d51e09;
 }
 
+.image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 }
 .link {
   display: flex;
@@ -241,13 +254,6 @@ footer {
     overflow: visible;
 }
 
-.visu:hover {
-    display: grid;
-    grid-column: 6 / 8;
-    grid-row: 4 / 7;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
 
 .bio {
     grid-column: 8;
@@ -359,6 +365,7 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    
 }
 
 .wrap-visual {
